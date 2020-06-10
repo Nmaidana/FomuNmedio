@@ -19,18 +19,18 @@
                     <div class="col-sm-6">
                         <div class="form-group">
                             <label for="exampleInputEmail1">Nombre</label>
-                            <input type="text" class="form-control" id="exampleInputEmail1"
-                                placeholder="Agregar Nombre">
+                            <input type="text" class="form-control" id="" name='nombre'
+                                value="{{ isset($nombre)? $nombre :null}}" readonly>
                         </div>
                         <div class="form-group">
                             <label for="exampleInputEmail1">Nacionalidad</label>
-                            <input type="text" class="form-control" id="exampleInputEmail1"
-                                placeholder="Agregar Nacionalidad">
+                            <input type="text" class="form-control" name='nombre'
+                                value="{{ isset($nacionalidad)? $nacionalidad :null}}" readonly>
                         </div>
                         <div class="form-group">
                             <label for="exampleInputEmail1">Género</label>
-                            <input type="text" class="form-control" id="exampleInputEmail1"
-                                placeholder="Agregar Género">
+                            <input type="text" class="form-control" id="" name='sexo' placeholder="Agregar Género"
+                                value="{{isset($sexo)? $sexo :null}}" readonly>
                         </div>
                         <div class="form-group">
                             <label for="exampleInputEmail1">N° Celular</label>
@@ -62,18 +62,18 @@
                     <div class="col-sm-6">
                         <div class="form-group">
                             <label for="exampleInputEmail1">Apellido</label>
-                            <input type="text" class="form-control" id="exampleInputEmail1"
-                                placeholder="Agregar Apellido ">
+                            <input type="text" class="form-control" id="" name='apellido'
+                                value="{{isset($apellido)? $apellido :null}}" readonly>
                         </div>
                         <div class="form-group">
                             <label for="exampleInputEmail1">Cédula de Identidad</label>
-                            <input type="number" class="form-control" id="exampleInputEmail1"
-                                placeholder="Agregar N° der CI">
+                            <input type="number" class="form-control" id="" name='cedula'
+                                value="{{isset($cedula)? $cedula :null}}" readonly>
                         </div>
                         <div class="form-group">
                             <label for="exampleInputEmail1">Fecha de Nacimiento</label>
-                            <input type="text" class="form-control" id="exampleInputEmail1"
-                                placeholder="Agregar Fecha de Nacimiento">
+                            <input type="text" class="form-control" id="" name='fecha_nac'
+                                value="{{ isset($fecha_nac)? $fecha_nac :null}}" readonly>
                         </div>
                         <div class="form-group">
                             <label for="exampleInputEmail1">N° Teléfono</label>
@@ -96,14 +96,14 @@
                             <input type="text" class="form-control" id="exampleInputEmail1"
                                 placeholder="Agregar Zona de la Vivienda Deseada">
                         </div>
-                      <div class="form-group">
-                        <label>Seleccionar N° de Dormitorios</label>
-                        <select class="form-control">
-                          <option>1 dormitorio</option>
-                          <option>2 dormitorios</option>
-                          <option>3 dormitorios</option>
-                        </select>
-                      </div>
+                        <div class="form-group">
+                            <label>Seleccionar N° de Dormitorios</label>
+                            <select class="form-control">
+                                <option>1 dormitorio</option>
+                                <option>2 dormitorios</option>
+                                <option>3 dormitorios</option>
+                            </select>
+                        </div>
                     </div>
                 </div><br>
                 <div class="card card-info">
@@ -141,7 +141,7 @@
                 <div class="row">
                     <div class="col-5">
                         <label>
-                        ¿Alguna vez fue beneficiado/a con algún Subsidio del MUVH?
+                            ¿Alguna vez fue beneficiado/a con algún Subsidio del MUVH?
                         </label>
 
                     </div>

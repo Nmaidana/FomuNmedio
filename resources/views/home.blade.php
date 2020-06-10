@@ -22,17 +22,13 @@
                 <div class="input-group mb-3">
                     <input type="number" id="nroexp" required maxlength="8" name="cedula" value=""
                         placeholder="Ingrese N° de Cedula" class="form-control">
-                    <div class="input-group-append">
-                        <span type="submit" class="btn btn-primary btn-flat"><i class="fa fa-search"></i></span>
-                    </div>
+                        <span class="input-group-btn">
+                    <button type="submit" class="btn btn-primary btn-flat"><i class="fa fa-search"></i></button>
+                </span>
+                   
                 </div>
             </div>
         </form>
-
-
-
-
-        
     </section>
 </div>
 @endsection
