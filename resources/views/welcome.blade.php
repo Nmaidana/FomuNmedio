@@ -1,12 +1,9 @@
 @extends('layouts.app')
 @section('content')
-
 <div class="card card-info">
     <div class="card-header">
         <h2 class="card-title">Formulario de Inscripción Clase Media</h2>
     </div>
-    <!-- /.card-header -->
-    <!-- form start -->
     <section class="invoice">
         @if(Session::has('message'))
         <p class="alert {{ Session::get('alert-class', 'alert-info') }}">{{ Session::get('message') }}</p>

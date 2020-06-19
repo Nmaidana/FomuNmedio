@@ -22,10 +22,5 @@ Auth::routes();
 //Route::get('/home', 'HomeController@create');
 //Route::resource('/home', 'HomeController@create');
 //Route::post('/formulario', 'HomeController@store');
-
-Route::get('/inicio', function () {
-    return view('welcome');
-})->name('inicio');
-   
 Route::resource('/home', 'HomeController');
 //Route::post('/formulario', 'HomeController@store');
