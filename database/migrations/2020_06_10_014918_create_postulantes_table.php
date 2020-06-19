@@ -14,14 +14,14 @@ class CreatePostulantesTable extends Migration
     public function up()
     {
         Schema::create('postulantes', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->Increments('id');
             $table->integer('ci');
             $table->string('nombre');
             $table->string('apellido')->nullable();
             $table->string('sexo')->nullable();
             $table->string('nacionalidad')->nullable();
             $table->date('fecha_nac')->nullable();
-            $table->string('telefono');
+            $table->string('email');
             $table->string('celular');
             $table->string('vivienda')->nullable();
             $table->string('profesion')->nullable();

@@ -2,7 +2,8 @@
 @section('content')
 <div class="card card-info">
     <div class="card-header">
-        <h2 class="card-title">Formulario de Inscripción Clase Media</h2>
+        <h3><i class="fa fa-home"></i> <strong>Formulario de Inscripción Clase Media
+                                </strong><small class="pull-right">
     </div>
     <section class="invoice">
         @if(Session::has('message'))

@@ -24,7 +24,7 @@
                         </div>
                         <div class="form-group">
                             <label for="exampleInputEmail1">Nacionalidad</label>
-                            <input type="text" class="form-control" name='nombre'
+                            <input type="text" class="form-control" name='nacionalidad'
                                 value="{{ isset($nacionalidad)? $nacionalidad :null}}" readonly>
                         </div>
                         <div class="form-group">
@@ -33,17 +33,17 @@
                                 value="{{isset($sexo)? $sexo :null}}" readonly>
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputEmail1">N° Celular</label>
+                            <label for="exampleInputEmail1">N° Celular o Teléfono</label>
                             <input type="number" class="form-control" id="exampleInputEmail1"
                                 placeholder="Agregar N° de Celular">
                         </div>
                         <div class="form-group">
                             <label for="exampleInputEmail1">Zona o Localidad Donde Vive Actualmente</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1"
+                            <input type="text" class="form-control" id="exampleInputEmail1"
                                 placeholder="Agregar Dirección de la Vivienda">
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputEmail1">Lugar de Trabajo Denominación</label>
+                            <label for="exampleInputEmail1">Lugar de Trabajo o Denominación</label>
                             <input type="text" class="form-control" id="exampleInputEmail1"
                                 placeholder="Agregar Nombre del Lugar de Trabajo">
                         </div>
