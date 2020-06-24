@@ -121,35 +121,11 @@ class HomeController extends Controller
             return redirect()->back();
         }
 
-        $postulante = new Postulante();
-        $postulante->ci=$request->ci;
-        $postulante->nombre=$request->nombre;
-
-        $postulante->apellido=$request->apellido;
-        $postulante->sexo=$request->sexo;
-
-        $postulante->fecha_nac=$request->fecha_nac;
-        $postulante->nacionalidad=$request->nacionalidad;
-      
-        $postulante->telefono=$request->telefono;
-        $postulante->vivienda=$request->vivienda;
-
-        $postulante->profesion=$request->profesion;
-        $postulante->lugar_trabajo=$request->lugar_trabajo;
-       
-        $postulante->nflia=$request->nflia;
-        $postulante->napte=$request->napte;
-
-        $postulante->ingresof=$request->ingresof;
-        $postulante->lugar_vivienda=$request->lugar_vivienda;
-
-        $postulante->monto_apagar=$request->monto_apagar;
+        
     
         //$postulante->ingreso=$request->ingreso;
        // $postulante->estado_civil=$request->estado_civil;
         //$postulante->celular=$request->celular;
-
-
         $postulante->save();
 
         Session::flash('message', 'Se ha inscripto Correctamente!');

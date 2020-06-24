@@ -8,7 +8,6 @@
                 <img src="{{asset('Logo1.jpg')}}" alt="" class="brand-image img-circle elevation-3" style="opacity: .8; float: left;
                         line-height: .8;   margin-left:-10.0rem;  margin-right: 0.5rem;
                         margin-top: 0px; max-height: 40px; width: auto;">
-            </a>
         </div>
     </nav>
     <link rel="stylesheet" href="{{ asset('wolfsyncro/adminlte3/plugins/fontawesome-free/css/all.min.css') }}">

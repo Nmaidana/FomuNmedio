@@ -36,6 +36,3 @@
 @section('css')
 
 @endsection
-
-
-
