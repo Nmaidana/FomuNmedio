@@ -20,7 +20,7 @@ class CreatePostulantePreguntasTable extends Migration
             $table->integer('postulante_id')->unsigned();
             $table->foreign('postulante_id')->references('id')->on('postulantes')->onDelete('cascade');
             $table->string('value');
-            $table->string('text_value');
+            $table->string('text_value')->nullable();;
             $table->timestamps();
             $table->softDeletes();
            

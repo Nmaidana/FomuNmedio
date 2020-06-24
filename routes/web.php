@@ -13,9 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+/*Route::get('/', function () {
   return view('welcome');
-});
+});*/
 
 //Auth::routes();
 
@@ -23,9 +23,9 @@ Route::get('/', function () {
 //Route::resource('/home', 'HomeController@create');
 //Route::post('/formulario', 'HomeController@store');
 
-/*Route::get('/inicio', function () {
+Route::get('/', function () {
     return view('welcome');
-})->name('inicio');*/
+})->name('inicio');
    
 Route::resource('/home', 'HomeController');
 Route::post('/formulario', 'HomeController@store');

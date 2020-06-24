@@ -15,7 +15,7 @@ class CreatePreguntasTable extends Migration
     {
         Schema::create('preguntas', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer ('name');
+            $table->string ('name');
             $table->timestamps();
             $table->softDeletes();
             

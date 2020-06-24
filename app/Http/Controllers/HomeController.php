@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 use GuzzleHttp\Client;
 use Illuminate\Http\Request;
 use App\Postulante;
+use App\PostulantePregunta;
 use Session;
 use GuzzleHttp\Exception\GuzzleException;
 class HomeController extends Controller
@@ -120,13 +121,34 @@ class HomeController extends Controller
             Session::flash('error', 'Ya existe el postulante!');
             return redirect()->back();
         }
-
-        
-    
-        //$postulante->ingreso=$request->ingreso;
-       // $postulante->estado_civil=$request->estado_civil;
-        //$postulante->celular=$request->celular;
+        $postulante = new Postulante();
+        $postulante->ci=$request->ci;
+        $postulante->nombre=$request->nombre;
+        $postulante->apellido=$request->apellido;
+        $postulante->sexo=$request->sexo;
+        $postulante->fecha_nac=$request->fecha_nac;
+        $postulante->nacionalidad=$request->nacionalidad;
+        $postulante->celular=$request->celular;
+        $postulante->email=$request->email;
+        $postulante->vivienda_actual=$request->vivienda_actual;
+        $postulante->trab_nombre=$request->trab_nombre;
+        $postulante->trab_direccion=$request->trab_direccion;
+        $postulante->integrante_fliar=$request->integrante_fliar;
+        $postulante->numero_aport=$request->numero_aport;
+        $postulante->ingreso_fliar=$request->ingreso_fliar;
+        $postulante->vivienda_deseada=$request->vivienda_deseada;
+        $postulante->cantidad_dor=$request->cantidad_dor;
         $postulante->save();
+
+        $data = $request->except('_token','id');
+        for ($i=1; $i < 3 ; $i++) {
+            $question = new PostulantePregunta;
+            $question->pregunta_id = $i;
+            $question->postulante_id = $postulante->id;
+            $question->value = $data['q'.$i];
+            $question->text_value = $data['q'.$i.'_text'];
+            $question->save();
+        }
 
         Session::flash('message', 'Se ha inscripto Correctamente!');
         return redirect()->route('inicio');

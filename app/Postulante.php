@@ -7,5 +7,5 @@ use Illuminate\Database\Eloquent\Model;
 class Postulante extends Model
 {
     //
-    protected $fillable = ['ci','nombre','apellido', 'sexo','fecha_nac','nacionalidad','telefono','vivienda','profesion','lugar_trabajo','nfamilia', 'napte','ingresof','lugar_vivienda','monto_apagar','email',];
+    protected $fillable = ['ci','nombre','apellido', 'sexo','fecha_nac','nacionalidad','celular','email','vivienda_actual','trab_nombre','trab_direccion', 'integrante_fliar','numero_aport','ingreso_fliar','vivienda_deseada','cantidad_dor',];
 }
