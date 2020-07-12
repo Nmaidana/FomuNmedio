@@ -70,6 +70,14 @@
                                         <input type="number" class="form-control" name="numero_aport" value=""
                                             placeholder="Agregar N° de Aportantes" required>
                                     </div>
+                                    <div class="form-group">
+                                        <label>Seleccionar N° de Dormitorios</label>
+                                        <select class="form-control" name="cantidad_dor" value="">
+                                            <option>1 dormitorio</option>
+                                            <option>2 dormitorios</option>
+                                            <option>3 dormitorios</option>
+                                        </select>
+                                    </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-group">
@@ -103,18 +111,20 @@
                                             placeholder="Agregar Ingreso Aproximado de los Aportantes" require>
                                     </div>
                                     <div class="form-group">
-                                        <label for="">En qué Zona le Gustaria
+                                        <label for="">Opción 1 En qué Zona le Gustaria
                                             Vivir(Departamento/Ciudad/Barrio)</label>
-                                        <input type="text" class="form-control" name="vivienda_deseada" value=""
-                                            placeholder="Agregar Zona de la Vivienda Deseada" required>
+                                        <input type="text" class="form-control" name="vivienda_deseada[]" value=""
+                                            placeholder="Agregar Opción 1 de lugar de vivienda deseada..." required>
                                     </div>
                                     <div class="form-group">
-                                        <label>Seleccionar N° de Dormitorios</label>
-                                        <select class="form-control" name="cantidad_dor" value="">
-                                            <option>1 dormitorio</option>
-                                            <option>2 dormitorios</option>
-                                            <option>3 dormitorios</option>
-                                        </select>
+                                        <label for="">Opción 2</label>
+                                        <input type="text" class="form-control" name="vivienda_deseada[]" value=""
+                                            placeholder="Agregar Opción 2 de lugar de vivienda deseada...">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="">Opción 3</label>
+                                        <input type="text" class="form-control" name="vivienda_deseada[]" value=""
+                                            placeholder="Agregar Opción 3 de lugar de vivienda deseada...">
                                     </div>
                                 </div>
                             </div><br>

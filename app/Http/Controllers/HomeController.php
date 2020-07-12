@@ -136,7 +136,7 @@ class HomeController extends Controller
         $postulante->integrante_fliar=$request->integrante_fliar;
         $postulante->numero_aport=$request->numero_aport;
         $postulante->ingreso_fliar=$request->ingreso_fliar;
-        $postulante->vivienda_deseada=$request->vivienda_deseada;
+        $postulante->vivienda_deseada=json_encode($request->vivienda_deseada);
         $postulante->cantidad_dor=$request->cantidad_dor;
         $postulante->save();
 
